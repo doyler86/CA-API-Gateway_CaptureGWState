@@ -12,6 +12,7 @@
 # Jay MacDonald - v1 - 20160803
 # Jay MacDonald - v2 - 20160831 - Switched to concurrent capture
 # Doyle Reece   - v3 - 20161107 - Added node.properties and system.properties
+# Doyle Reece   - v4 - 20161111 - Added Crontab to the package
 
 OPTS="hH"
 
