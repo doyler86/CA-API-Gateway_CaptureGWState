@@ -120,6 +120,10 @@ echo -n "=> Copying system.properties file: "
 cp /opt/SecureSpan/Gateway/node/default/etc/conf/system.properties $TSTAMP/system.properties-$HOSTNAME
 echo "OK"
 
+echo -n "=> Copying crontab for user: $USER "
+crontab -l > $TSTAMP/crontab.output-$HOSTNAME
+echo "OK"
+
 echo "=> Generating zip file /home/ssgconfig/gw_state-$HOSTNAME-$TSTAMP.zip: "
 zip -r /home/ssgconfig/gw_state-$HOSTNAME-$TSTAMP.zip $TSTAMP
 
